@@ -1,0 +1,120 @@
+@media(max-width:500px){
+    .container{
+        width: 362px !important;
+    }
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,rgb(55, 42, 208),rgba(122, 11, 122, 0.91));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}  
+.container{
+    width: 530px;
+    background-color: white;
+    border-radius: 23px;
+    padding: 30px;
+    box-shadow: 1px 1px 17px rgba(247, 6, 6, 0.936);
+
+}
+.top{
+    display: flex;
+   gap: 32px;
+   margin-bottom: 22px;
+}
+.topIcon{
+    height: 42px;
+}
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(227, 225, 225) ;
+    border-radius: 17px;
+
+}
+input{
+    font-size: 20px;
+    padding: 12px;
+    width: 80%;
+    border: none;
+    background-color: rgb(227, 225, 225);
+    outline: none;
+    border-radius: 17px;
+    cursor: pointer;
+    
+
+}
+input::placeholder{
+    color: rgb(100, 98, 98);
+   font-weight: 500;
+
+}
+.cross{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.cross button{
+    width: 75px;
+    height: 32px;
+    background-color: red;
+    color: white;
+    border-width: 5px;
+}
+.button{
+    outline: none;
+    font-size: 20px;
+   border-radius: 17px;
+   padding-top: 10px;
+   padding-bottom: 9px;
+   padding-left: 38px;
+   padding-right: 38px;
+   background-color: rgb(254, 78, 8);
+   cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(16, 225, 225);
+    color: white;
+    font-weight: 700;
+}
+ul li{
+    list-style: none;
+    padding: 32px 3px 17px 34px ;
+    border-bottom: 1px solid rgb(227, 225, 225);
+    font-size: 23px;
+    font-weight: 500;
+    cursor: pointer; 
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border: 1px solid rgb(70, 69, 69);
+    border-radius: 50%;
+    left: -3px;
+    
+}
+ul li.checked{
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-color: rgb(254, 78, 8);
+}
+ul li span{
+    position: absolute;
+right: -2px;
+    font-weight: 900;
+
+}
